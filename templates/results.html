@@ -1,5 +1,18 @@
 {% extends 'index.html' %}
 
 {% block content %}
+<h1> Locations for {{ind[0].industry}}: </h1>
+ <ul>
+    {% for i in ind %}
+        <li>{{i.location}}</li>
+    {% endfor %}
+ </ul>
 
+<h1> Industries for {{loc[0].location}}: </h1>
+ <ul>
+    {% for i in loc %}
+        <li>{{i.industry}}</li>
+    {% endfor %}
+ </ul>
+ 
 {% endblock %}
